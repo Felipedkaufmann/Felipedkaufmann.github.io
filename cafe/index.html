@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grão &amp; Prosa | Cafeteria</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Work+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#F7F3EC;--card:#fff;--ink:#23201B;--muted:#6a645a;--green:#1F3A2E;--gold:#E3A72F;--line:#d9d2c4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14201a;--card:#1c2c24;--ink:#f1ece1;--muted:#b5b0a2;--green:#0e1a14;--gold:#efb94a;--line:#34473d}}
+:root[data-theme="dark"]{--bg:#14201a;--card:#1c2c24;--ink:#f1ece1;--muted:#b5b0a2;--green:#0e1a14;--gold:#efb94a;--line:#34473d}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Work Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;margin:0;line-height:1.1}
+.w{max-width:960px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:800 22px Fraunces,Georgia,serif}.logo b{color:var(--gold)}
+.btn{display:inline-block;background:var(--gold);color:#23201B;font-weight:600;text-decoration:none;padding:13px 24px;border-radius:99px}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.hero{display:grid;gap:28px;padding:30px 0 64px;align-items:center}
+.hero h1{font-size:clamp(38px,8vw,66px);font-weight:800;letter-spacing:-.02em}
+.hero p{color:var(--muted);max-width:44ch;margin:16px 0 26px}
+.board{background:var(--green);color:#f1ece1;border-radius:18px;padding:28px;border:6px solid #6b4a2e}
+.board h3{font-size:24px;color:var(--gold);margin-bottom:14px}
+.board p{margin:0 0 8px;opacity:.9}.board .big{font:800 28px Fraunces,serif;opacity:1;color:#fff}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,5vw,40px);margin-bottom:24px}
+.menu{display:grid;gap:0 48px}
+.row{display:flex;align-items:baseline;gap:8px;padding:12px 0}
+.row i{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
+.row span:first-child{font-weight:600}.row small{display:block;color:var(--muted);font-weight:400}
+.row span:last-child{font-weight:600}
+.info{display:grid;gap:20px}.info div{background:var(--card);border-radius:14px;padding:22px;border:1px solid var(--line)}
+.info h3{font-size:20px;margin-bottom:6px}.info p{margin:0;color:var(--muted)}
+.cta{background:var(--green);color:#f1ece1;border-radius:20px;padding:40px 26px;margin:10px 0 40px}
+.cta h2{margin-bottom:10px}.cta p{margin:0 0 22px;opacity:.85}
+footer{padding:0 0 36px;font-size:14px;color:var(--muted)}footer a{color:inherit}
+@media(min-width:760px){.hero{grid-template-columns:1.2fr .8fr}.menu{grid-template-columns:1fr 1fr}.info{grid-template-columns:repeat(3,1fr)}.cta{padding:52px}}
+</style>
+</head>
+<body><div class="w">
+<nav><span class="logo">Grão<b>&amp;</b>Prosa</span><a class="btn" href="#visita">Visite-nos</a></nav>
+<main>
+<div class="hero">
+<div><h1>Café coado na hora, conversa sem pressa.</h1><p>Grãos selecionados, pães e bolos feitos todos os dias, e uma mesa esperando por você.</p><a class="btn" href="#cardapio">Ver cardápio</a></div>
+<div class="board"><h3>Hoje na casa</h3><p class="big">Café do dia: Cerrado Mineiro</p><p>Notas de chocolate e castanha</p><p>Bolo de cenoura quentinho às 15h</p></div>
+</div>
+<section id="cardapio"><h2>Cardápio</h2>
+<div class="menu">
+<div class="row"><span>Espresso</span><i></i><span>R$ 7</span></div>
+<div class="row"><span>Cappuccino<small>Com espuma cremosa</small></span><i></i><span>R$ 12</span></div>
+<div class="row"><span>Café coado</span><i></i><span>R$ 9</span></div>
+<div class="row"><span>Pão de queijo<small>Porção com 4</small></span><i></i><span>R$ 10</span></div>
+<div class="row"><span>Bolo caseiro<small>Fatia, sabor do dia</small></span><i></i><span>R$ 14</span></div>
+<div class="row"><span>Torrada com ovos</span><i></i><span>R$ 18</span></div>
+</div></section>
+<section id="visita"><h2>Venha nos visitar</h2>
+<div class="info">
+<div><h3>Horário</h3><p>Seg a sex, 7h às 19h<br>Sáb e dom, 8h às 17h</p></div>
+<div><h3>Endereço</h3><p>Rua Exemplo, 123<br>Centro</p></div>
+<div><h3>Encomendas</h3><p>Bolos e salgados para festas e reuniões, com 2 dias de antecedência.</p></div>
+</div></section>
+<div class="cta"><h2>Reserve sua mesa</h2><p>Vem em grupo? Avise antes e deixamos tudo pronto.</p><a class="btn" href="#">Reservar mesa</a></div>
+</main>
+<footer>Site de demonstração, criado por <a href="https://wa.me/5551980147554">Felipe Kaufmann</a>.<br><a href="../">Voltar ao portfólio</a></footer>
+</div></body></html>

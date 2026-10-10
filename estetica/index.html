@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio Aurora | Estética feminina</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap">
+<style>
+:root{--bg:#FBF8F4;--card:#fff;--ink:#3B2339;--muted:#7a6678;--plum:#4B2A47;--lilac:#E9DDF0;--sage:#A9BFA3;--line:#e7dde5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b121b;--card:#261a26;--ink:#f3eaf2;--muted:#bba9b8;--plum:#7a4a75;--lilac:#3a2a3d;--sage:#8aa585;--line:#3f2f3e}}
+:root[data-theme="dark"]{--bg:#1b121b;--card:#261a26;--ink:#f3eaf2;--muted:#bba9b8;--plum:#7a4a75;--lilac:#3a2a3d;--sage:#8aa585;--line:#3f2f3e}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.7 Jost,system-ui,sans-serif}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;margin:0;font-weight:600;line-height:1.1}
+.w{max-width:960px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:600 26px "Cormorant Garamond",serif;letter-spacing:.02em}
+.btn{display:inline-block;background:var(--plum);color:#fff;font-weight:500;text-decoration:none;padding:13px 28px;border-radius:99px}
+.btn:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
+.hero{display:grid;gap:32px;padding:24px 0 64px;align-items:center;text-align:center}
+.arch{width:min(260px,70%);aspect-ratio:3/4;margin:0 auto;border-radius:999px 999px 24px 24px;background:linear-gradient(170deg,var(--lilac),var(--sage));display:grid;place-items:end center;padding-bottom:22px;order:-1}
+.arch span{background:var(--bg);color:var(--ink);font-size:14px;padding:6px 14px;border-radius:99px}
+.hero h1{font-size:clamp(42px,9vw,72px);font-weight:500}
+.hero p{color:var(--muted);max-width:42ch;margin:16px auto 26px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(32px,6vw,44px);margin-bottom:8px;font-weight:500}
+.lead{color:var(--muted);margin:0 0 28px}
+.t{display:grid;gap:0 48px}
+.r{display:flex;justify-content:space-between;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.r h3{font-size:24px}.r p{margin:0;color:var(--muted);font-size:15px}.r b{font-weight:500;white-space:nowrap;color:var(--plum)}
+@media(prefers-color-scheme:dark){.r b{color:var(--sage)}}
+.cta{background:var(--lilac);border-radius:24px;padding:44px 26px;margin:10px 0 40px;text-align:center}
+.cta h2{margin-bottom:10px}.cta p{margin:0 0 22px;color:var(--muted)}
+.info{margin:0 0 40px;color:var(--muted);text-align:center;font-size:15px}
+footer{padding:0 0 36px;font-size:14px;color:var(--muted);text-align:center}footer a{color:inherit}
+@media(min-width:760px){.t{grid-template-columns:1fr 1fr}.hero{grid-template-columns:1fr 1fr;text-align:left}.hero p{margin-left:0}.arch{order:2}.cta{padding:56px}}
+</style>
+</head>
+<body><div class="w">
+<nav><span class="logo">Studio Aurora</span><a class="btn" href="#agendar">Agendar</a></nav>
+<main>
+<div class="hero"><div><h1>Um tempo só seu, com cuidado de verdade.</h1><p>Tratamentos de beleza e bem-estar em um espaço acolhedor, com atendimento exclusivo e horário marcado.</p><a class="btn" href="#tratamentos">Conhecer tratamentos</a></div>
+<div class="arch" aria-hidden="true"><span>Atendimento com hora marcada</span></div></div>
+<section id="tratamentos"><h2>Tratamentos</h2><p class="lead">Valores iniciais, que variam conforme o procedimento escolhido.</p>
+<div class="t">
+<div class="r"><div><h3>Limpeza de pele</h3><p>Higienização e hidratação do rosto</p></div><b>a partir de R$ 120</b></div>
+<div class="r"><div><h3>Design de sobrancelhas</h3><p>Alinhamento de acordo com seu rosto</p></div><b>a partir de R$ 45</b></div>
+<div class="r"><div><h3>Massagem relaxante</h3><p>50 minutos para desacelerar</p></div><b>a partir de R$ 130</b></div>
+<div class="r"><div><h3>Drenagem linfática</h3><p>Técnica manual, sessão individual</p></div><b>a partir de R$ 140</b></div>
+<div class="r"><div><h3>Manicure e pedicure</h3><p>Esmaltação tradicional ou em gel</p></div><b>a partir de R$ 70</b></div>
+<div class="r"><div><h3>Depilação</h3><p>Com cera, em diversas áreas</p></div><b>a partir de R$ 30</b></div>
+</div></section>
+<div class="cta" id="agendar"><h2>Reserve seu momento</h2><p>Escolha o dia e o horário pelo WhatsApp. Respondemos rapidinho.</p><a class="btn" href="#">Agendar pelo WhatsApp</a></div>
+<p class="info">Terça a sábado, 9h às 19h. Rua Exemplo, 123, Centro.</p>
+</main>
+<footer>Site de demonstração, criado por <a href="https://wa.me/5551980147554">Felipe Kaufmann</a>.<br><a href="../">Voltar ao portfólio</a></footer>
+</div></body></html>

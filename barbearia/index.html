@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Navalha &amp; Cia | Barbearia</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#EDE6DA;--card:#f7f2e9;--ink:#2a1514;--muted:#6f5a52;--red:#6B1E1B;--brass:#B8893A;--blue:#1d3557;--line:#d3c7b4;--on-red:#f4ede0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1211;--card:#291a18;--ink:#f1e8da;--muted:#b9a79b;--red:#8c2a26;--brass:#d2a24d;--line:#43302c}}
+:root[data-theme="dark"]{--bg:#1c1211;--card:#291a18;--ink:#f1e8da;--muted:#b9a79b;--red:#8c2a26;--brass:#d2a24d;--line:#43302c}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Barlow,system-ui,sans-serif}
+h1,h2,h3{font-family:"Barlow Condensed",Impact,sans-serif;margin:0;line-height:1;font-weight:700}
+.w{max-width:960px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:700 26px "Barlow Condensed",sans-serif}
+.btn{display:inline-block;background:var(--brass);color:#25160f;font-weight:600;text-decoration:none;padding:13px 26px;border-radius:4px}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.hero{display:grid;grid-template-columns:34px 1fr;gap:24px;padding:24px 0 60px}
+.pole{border-radius:20px;background:repeating-linear-gradient(135deg,var(--red) 0 16px,#f4ede0 16px 32px,var(--blue) 32px 48px,#f4ede0 48px 64px);border:3px solid var(--ink)}
+.hero h1{font-size:clamp(48px,11vw,96px);letter-spacing:.005em}
+.hero p{color:var(--muted);max-width:42ch;margin:16px 0 26px;font-size:19px}
+section{padding:54px 0;border-top:2px solid var(--ink)}
+section h2{font-size:clamp(34px,6vw,48px);margin-bottom:22px}
+.row{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.row h3{font-size:26px}.row p{margin:2px 0 0;color:var(--muted)}
+.row b{font:700 28px "Barlow Condensed",sans-serif;color:var(--red);white-space:nowrap}
+@media(prefers-color-scheme:dark){.row b{color:var(--brass)}}
+.hrs{display:grid;gap:14px}.hrs div{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:20px}
+.hrs h3{font-size:24px;margin-bottom:4px}.hrs p{margin:0;color:var(--muted)}
+.cta{background:var(--red);color:var(--on-red);border-radius:8px;padding:40px 26px;margin:10px 0 40px}
+.cta h2{margin-bottom:8px;color:var(--on-red)}.cta p{margin:0 0 22px;opacity:.88}
+footer{padding:0 0 36px;font-size:14px;color:var(--muted)}footer a{color:inherit}
+@media(min-width:760px){.hrs{grid-template-columns:repeat(3,1fr)}.cta{padding:52px}.hero{grid-template-columns:48px 1fr}}
+</style>
+</head>
+<body><div class="w">
+<nav><span class="logo">Navalha &amp; Cia</span><a class="btn" href="#agendar">Agendar</a></nav>
+<main>
+<div class="hero"><div class="pole" aria-hidden="true"></div>
+<div><h1>Corte bem feito. Barba no ponto.</h1><p>Barbeiros experientes, ambiente tranquilo e atendimento com hora marcada. Você sai de cabeça erguida.</p><a class="btn" href="#servicos">Ver serviços</a></div></div>
+<section id="servicos"><h2>Serviços e preços</h2>
+<div class="row"><div><h3>Corte</h3><p>Tesoura ou máquina, acabamento na navalha</p></div><b>R$ 45</b></div>
+<div class="row"><div><h3>Barba</h3><p>Toalha quente e produtos de qualidade</p></div><b>R$ 35</b></div>
+<div class="row"><div><h3>Corte + barba</h3><p>O combo mais pedido da casa</p></div><b>R$ 70</b></div>
+<div class="row"><div><h3>Sobrancelha</h3><p>Alinhamento na navalha</p></div><b>R$ 15</b></div>
+<div class="row"><div><h3>Corte infantil</h3><p>Até 10 anos</p></div><b>R$ 35</b></div>
+</section>
+<section><h2>Funcionamento</h2>
+<div class="hrs">
+<div><h3>Horário</h3><p>Ter a sex, 9h às 20h<br>Sábado, 9h às 18h</p></div>
+<div><h3>Endereço</h3><p>Rua Exemplo, 123<br>Centro</p></div>
+<div><h3>Formas de pagamento</h3><p>Pix, cartão e dinheiro</p></div>
+</div></section>
+<div class="cta" id="agendar"><h2>Garanta seu horário</h2><p>Agende pelo WhatsApp e evite fila de espera.</p><a class="btn" href="#">Agendar pelo WhatsApp</a></div>
+</main>
+<footer>Site de demonstração, criado por <a href="https://wa.me/5551980147554">Felipe Kaufmann</a>.<br><a href="../">Voltar ao portfólio</a></footer>
+</div></body></html>

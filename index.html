@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Felipe Kaufmann | Sites profissionais para empresas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#F3EBE1;--surface:#FAF6F0;--ink:#3A2A20;--muted:#76624f;--line:#E0D1BF;--accent:#8A5A3B;--accent-ink:#fff;--ok:#9db57d;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f1611;--surface:#2a1f18;--ink:#f3e9de;--muted:#bfa995;--line:#43342a;--accent:#c8956d;--accent-ink:#1f1611;--ok:#a8c08a}}
+:root[data-theme="dark"]{--bg:#1f1611;--surface:#2a1f18;--ink:#f3e9de;--muted:#bfa995;--line:#43342a;--accent:#c8956d;--accent-ink:#1f1611;--ok:#a8c08a}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font:800 20px "Bricolage Grotesque",sans-serif;text-decoration:none}
+.logo i{color:var(--accent);font-style:normal}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:700;text-decoration:none;padding:14px 24px;border-radius:10px;border:2px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hero{display:grid;gap:40px;padding:36px 0 72px;align-items:center}
+.hero h1{font-size:clamp(36px,7vw,62px);font-weight:800;letter-spacing:-.02em}
+.hero p{color:var(--muted);font-size:19px;max-width:48ch;margin:18px 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.browser{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 24px 50px -24px rgba(58,42,32,.35)}
+.bar{display:flex;gap:6px;align-items:center;padding:11px 14px;border-bottom:1px solid var(--line)}
+.bar b{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.bar span{margin-left:10px;font-size:12px;color:var(--muted);background:var(--bg);padding:3px 12px;border-radius:99px}
+.mock{padding:22px;display:grid;gap:12px}
+.mock .h{height:16px;width:62%;background:var(--ink);border-radius:5px}
+.mock .t{height:9px;border-radius:5px;background:var(--line)}
+.mock .b{height:30px;width:120px;border-radius:7px;background:var(--accent);margin-top:6px}
+.mock .row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}
+.mock .row div{height:64px;border-radius:8px;border:1px solid var(--line);background:var(--bg)}
+.mock .row div:first-child{background:var(--accent);opacity:.9;border-color:var(--accent)}
+.pill{position:absolute;right:14px;bottom:14px;font-size:13px;font-weight:700;background:var(--ok);color:#1d2612;padding:6px 12px;border-radius:99px}
+.browser{position:relative}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,5vw,40px);font-weight:700;margin-bottom:12px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:56ch;margin:0 0 36px}
+.list{display:grid;gap:0}
+.item{display:grid;gap:4px;padding:22px 0;border-bottom:1px solid var(--line)}
+.item h3{font-size:22px;font-weight:700}
+.item p{margin:0;color:var(--muted);max-width:62ch}
+.steps{counter-reset:s;display:grid;gap:18px;padding:0;list-style:none;margin:0}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.steps li:before{content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font:700 18px "Bricolage Grotesque",sans-serif}
+.steps h3{font-size:20px;margin-bottom:2px}
+.steps p{margin:0;color:var(--muted)}
+.why{display:grid;gap:14px}
+.why div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.why h3{font-size:20px;margin-bottom:6px}
+.why p{margin:0;color:var(--muted)}
+.final{background:var(--ink);color:var(--bg);border-radius:20px;padding:44px 26px;margin:20px 0 56px;text-align:left}
+.final h2{color:var(--bg)}
+.final p{opacity:.8;max-width:50ch;margin:0 0 26px}
+.final .btn{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+.final .btn.ghost{background:transparent;color:var(--bg);border-color:rgba(255,255,255,.35)}
+footer{padding:0 0 40px;color:var(--muted);font-size:14px}
+.nav{display:flex;align-items:center;gap:18px}.nav>a:first-child{text-decoration:none;font-weight:700}
+.proj{display:grid;gap:16px}.card{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}.card .top{height:96px;display:flex;align-items:flex-end;padding:12px 16px;font-weight:700;font-size:14px}.card .body{padding:18px 18px 20px}.card h3{font-size:22px;margin-bottom:4px}.card p{margin:0 0 12px;color:var(--muted);font-size:15px}.card .go{font-weight:700;color:var(--accent)}.card:hover{border-color:var(--accent)}.card:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(min-width:760px){.proj{grid-template-columns:repeat(3,1fr)}
+.hero{grid-template-columns:1.1fr .9fr}
+.item{grid-template-columns:280px 1fr;gap:28px}
+.why{grid-template-columns:repeat(3,1fr)}
+.final{padding:56px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="logo" href="#">Felipe Kaufmann<i>.</i></a>
+<span class="nav"><a href="#projetos">Projetos</a><a class="btn ghost" href="#contato">Fale comigo</a></span>
+</header>
+
+<main>
+<div class="hero">
+<div>
+<h1>Seu negócio merece um site que trabalha por você.</h1>
+<p>Crio sites rápidos, bonitos e fáceis de usar para empresas de todos os tamanhos. Seus clientes encontram você, entendem o que você faz e entram em contato.</p>
+<div class="cta">
+<a class="btn" href="#contato">Ver o protótipo</a>
+<a class="btn ghost" href="#servicos">O que eu faço</a>
+</div>
+</div>
+<div class="browser" aria-hidden="true">
+<div class="bar"><b></b><b></b><b></b><span>suaempresa.com.br</span></div>
+<div class="mock">
+<div class="h"></div>
+<div class="t" style="width:90%"></div>
+<div class="t" style="width:70%"></div>
+<div class="b"></div>
+<div class="row"><div></div><div></div><div></div></div>
+</div>
+<span class="pill">No ar</span>
+</div>
+</div>
+
+<section id="servicos">
+<h2>O que eu faço</h2>
+<p class="lead">Do primeiro rascunho à publicação, cuido de tudo para você não precisar entender de tecnologia.</p>
+<div class="list">
+<div class="item"><h3>Site institucional</h3><p>Apresenta sua empresa, seus serviços e seus contatos de forma clara e profissional.</p></div>
+<div class="item"><h3>Página de vendas</h3><p>Uma página focada em um produto ou serviço, pensada para transformar visitantes em clientes.</p></div>
+<div class="item"><h3>Portfólio e catálogo</h3><p>Mostre seus trabalhos ou produtos com fotos, descrições e um botão direto para pedir orçamento.</p></div>
+<div class="item"><h3>Melhoria de site existente</h3><p>Já tem um site lento, antigo ou difícil de usar no celular? Eu deixo ele moderno e rápido.</p></div>
+</div>
+</section>
+
+<section id="como">
+<h2>Como funciona</h2>
+<p class="lead">Um processo simples, com você acompanhando cada etapa.</p>
+<ol class="steps">
+<li><div><h3>Conversa inicial</h3><p>Entendo seu negócio, seu público e o que você quer que o site faça.</p></div></li>
+<li><div><h3>Protótipo</h3><p>Você vê como o site vai ficar antes de qualquer compromisso maior.</p></div></li>
+<li><div><h3>Desenvolvimento</h3><p>Construo o site com os ajustes que você pedir ao longo do caminho.</p></div></li>
+<li><div><h3>Publicação e suporte</h3><p>Coloco o site no ar e continuo disponível para dúvidas e pequenas mudanças.</p></div></li>
+</ol>
+</section>
+
+<section id="projetos">
+<h2>Projetos</h2>
+<p class="lead">Sites de demonstração que criei. Escolha um e veja como o seu negócio pode ficar.</p>
+<div class="proj">
+<a class="card" href="cafe/"><div class="top" style="background:linear-gradient(120deg,#1F3A2E,#3d6a54 60%,#E3A72F);color:#fff">Cafeteria</div><div class="body"><h3>Site café</h3><p>Cardápio, horários e reserva de mesa.</p><span class="go">Ver site</span></div></a>
+<a class="card" href="barbearia/"><div class="top" style="background:linear-gradient(120deg,#6B1E1B,#1d3557 65%,#B8893A);color:#fff">Barbearia</div><div class="body"><h3>Site barbearia</h3><p>Serviços, preços e agendamento pelo WhatsApp.</p><span class="go">Ver site</span></div></a>
+<a class="card" href="estetica/"><div class="top" style="background:linear-gradient(120deg,#E9DDF0,#A9BFA3);color:#4B2A47">Estética feminina</div><div class="body"><h3>Site clínica de estética</h3><p>Tratamentos, valores e reserva de horário.</p><span class="go">Ver site</span></div></a>
+</div>
+</section>
+
+<section id="porque">
+<h2>Por que trabalhar comigo</h2>
+<p class="lead">Estou começando e quero construir minha reputação com bons resultados. Por isso, cada projeto recebe atenção total.</p>
+<div class="why">
+<div><h3>Atendimento direto</h3><p>Você fala comigo, sem intermediários e sem demora para receber resposta.</p></div>
+<div><h3>Funciona no celular</h3><p>Seu site fica bonito e fácil de usar em qualquer tela, do telefone ao computador.</p></div>
+<div><h3>Sem surpresas</h3><p>Combinamos prazo e escopo antes de começar, e você aprova cada etapa.</p></div>
+</div>
+</section>
+
+<section id="valores"><h2>Valores sem complicação</h2><p class="lead">Estou conquistando meus primeiros clientes e estou aberto a negociar. Me conte o que você precisa e quanto pode investir, e a gente encontra um acordo que funcione para os dois lados.</p><a class="btn ghost" href="https://wa.me/5551980147554">Conversar sobre valores</a></section>
+
+<section id="contato" style="border-top:0;padding-top:20px">
+<div class="final">
+<h2>Quer ver o protótipo?</h2>
+<p>Me conte sobre o seu negócio e eu mostro como seu site pode ficar. Sem compromisso.</p>
+<div class="cta">
+<a class="btn" href="https://wa.me/5551980147554">Chamar no WhatsApp</a>
+<a class="btn ghost" href="mailto:felipeaires2010@hotmail.com">Enviar e-mail</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 Felipe Kaufmann. Desenvolvimento de sites para empresas.</footer>
+</div>
+</body>
+</html>
